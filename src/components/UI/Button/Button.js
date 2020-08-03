@@ -3,11 +3,11 @@ import React from 'react';
 import classes from './Button.module.css';
 
 const btn = (props) => (
-    <div
+    <button
         className={[classes.Button, classes[props.btnType]].join(" ")}
         onClick={props.clicked}>
         {props.children}
-    </div>
+    </button>
 );
 
 export default btn;
