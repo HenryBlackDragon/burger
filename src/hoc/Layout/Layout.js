@@ -14,7 +14,7 @@ class Layout extends Component {
         this.setState({ showSideDrawer: false });
     }
 
-    sideDrawerToggleHamdler = () => {
+    sideDrawerToggleHandler = () => {
         this.setState((prevState) => {
             return ({ showSideDrawer: !prevState.showSideDrawer });
         });
@@ -22,7 +22,7 @@ class Layout extends Component {
 
     render() {
         return (<Aux>
-            <Toolbar drawerToggleClicked={this.sideDrawerToggleHamdler} />
+            <Toolbar drawerToggleClicked={this.sideDrawerToggleHandler} />
             <SideDrawer open={this.state.showSideDrawer} closed={this.sideDrawerClosedHandler} />
             <main className={classes.Content}>
                 {this.props.children}
