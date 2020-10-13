@@ -45,8 +45,7 @@ export const auth = (email, password, isSignup) => {
                 dispatch(authSuccess(repsonse.data.idToken, repsonse.data.localId));
             })
             .catch(err => {
-                console.log(err);
-                dispatch(authFail(err));
+                dispatch(authFail(err.repsonse.data.error));
             });
     };
 };
