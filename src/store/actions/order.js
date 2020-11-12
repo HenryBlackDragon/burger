@@ -35,7 +35,7 @@ export const purchaseBurger = (orderData, token) => {
     };
 };
 
-export const purcahseInit = () => {
+export const purchaseInit = () => {
     return {
         type: actionTypes.PURCHASE_INIT
     };
